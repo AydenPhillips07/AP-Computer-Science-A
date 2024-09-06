@@ -19,7 +19,16 @@ public class Prog58b {
         double c = input.nextDouble();
         System.out.println();
 
-        int root1 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * (a * c)) /
+
+
+        double root1 = (-b + Math.sqrt(Math.pow(b, 2)) - (4 * (a * c))) / (2*a);
+        double root2 = (-b - Math.sqrt(Math.pow(b, 2)) - (4 * (a * c)) )/ (2*a);
+
+
+
+
+
+
 
     }
 
