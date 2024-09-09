@@ -22,7 +22,9 @@ public class Prog58h {
         int t = input.nextInt();
         System.out.println();
 
-        double A = p * ((1 + ((.01 * r)/ n) * n * t / 365));
+        double interestin = .01 * r;
+
+        double A = p * ((1 + (interestin / n) * n * t / 365));
 
         double TA = A + p;
         System.out.println("The interest earned is: " + A);
