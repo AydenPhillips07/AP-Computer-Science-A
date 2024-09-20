@@ -16,6 +16,19 @@ public class Prog72t {
         System.out.println();
 
 
+        int diff = Math.abs(time1 - time2);
+
+
+
+        double timdif = ((double) diff / 100.00);
+
+
+
+
+
+
+
+
 
 
 
