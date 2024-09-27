@@ -15,7 +15,14 @@ public class LP4_2 {
         System.out.print("Enter package height in centimeters: ");
         int height = input.nextInt();
 
+        int size = length * width * height;
 
+        if (weight > 27) System.out.println("Too Heavy.");
 
+        if (size > 100000); System.out.println("Too Large.");
+
+        }
     }
-}
+
+
+

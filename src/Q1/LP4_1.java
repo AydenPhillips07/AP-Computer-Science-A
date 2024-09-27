@@ -19,7 +19,7 @@ public class LP4_1 {
 
         double total = amt * cost;
         System.out.println("Price per copy: " + cost);
-        System.out.printf("Your total is: %.2f\n", total);
+        System.out.printf("Your total is: $ %.2f\n", total);
 
 
 
@@ -30,5 +30,5 @@ public class LP4_1 {
 /*
 Enter number of copies: 1001
 Price per copy: 0.25
-Your total is: 250.25
+Your total is: $ 250.25
  */

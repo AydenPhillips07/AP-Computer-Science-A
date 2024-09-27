@@ -7,7 +7,7 @@ public class Prog122a {
         System.out.println("Number\t\tSquare\t\tSquare Root");
         while (lcv < 50) {
             int square = lcv * lcv;
-            double sqrt = Math.round(Math.sqrt(lcv) * 1000) / 1000.0000;
+            double sqrt = Math.round(Math.sqrt(lcv));
             lcv += 1;
             System.out.println(lcv + "\t\t\t" + square + "\t\t\t" + sqrt);
         }
