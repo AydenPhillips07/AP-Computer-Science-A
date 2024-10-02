@@ -17,12 +17,28 @@ public class LP4_2 {
 
         int size = length * width * height;
 
-        if (weight > 27) System.out.println("Too Heavy.");
+        if (size <= 100000) {
+            if (weight < 27) {
+                System.out.println("Your package is accepted");
+            }
+            else if (weight > 27) {
+                System.out.println("Your package is too heavy");
+            }
 
-        if (size > 100000); System.out.println("Too Large.");
+        }
+        else if (size > 100000) {
+            System.out.println("Package is too large");
+        }
+
 
         }
     }
 
 
-
+/*
+Enter package weight in kilograms: 32
+Enter package length in centimeters: 10
+Enter package width in centimeters: 25
+Enter package height in centimeters: 38
+Your package is too heavy
+ */
