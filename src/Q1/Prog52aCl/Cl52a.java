@@ -8,7 +8,7 @@ public class Cl52a { // Rectangle (Helper Class)
 
     // Input Section (Constructor)
     public Cl52a(int len, int wid) {
-         //Set up private data
+        //Set up private data
         myLen = len;
         myWid = wid;
         myArea = 0;
