@@ -11,8 +11,15 @@ public class LP4_16 {
         double Sin = Math.sin(radians);
         double Cos = Math.cos(radians);
         double Tan = Math.tan(radians);
-        System.out.println("Sine: %.1f" + Sin);
-        System.out.println("Cosine: %.3f" + Cos);
-        System.out.println("Tangent: %.3f" + Tan);
+        System.out.printf("Sine: %.1f", Sin);
+        System.out.printf("\nCosine: %.3f", Cos);
+        System.out.printf("\nTangent: %.3f", Tan);
     }
 }
+/*
+Enter an angle in degrees:
+30
+Sine: 0.5
+Cosine: 0.866
+Tangent: 0.577
+ */
