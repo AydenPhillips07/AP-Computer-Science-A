@@ -33,6 +33,6 @@ public class Cl93a {
                 "\nSurcharge: " + surcharge +
                 "\nCity Tax: " + citytax +
                 "\nTotal: " + total +
-                "\n Late Total: " + lateTotal;
+                "\nLate Total: " + lateTotal;
     }
 }
