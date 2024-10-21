@@ -17,7 +17,7 @@ public class Prog285bCl {
 
                 Salesperson fred = new Salesperson(id, c, s);
                 fred.setComm();
-                System.out.println(fred.toString());  // println(fred);
+                System.out.println(fred.toString());
             }
         } catch (IOException e) {
             System.out.println("Error: " + e);

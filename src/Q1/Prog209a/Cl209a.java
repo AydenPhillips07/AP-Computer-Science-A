@@ -7,9 +7,10 @@ public class Cl209a {
     private int total;
 
     private void calc() {
-        if (num < 500) {
+            if (num < 500) {
             less += 1;
-        } else  {
+            }
+            else  {
             greq += 1;
         }
         total = less + greq;
@@ -17,6 +18,10 @@ public class Cl209a {
 
     public Cl209a(int num) {
         num = this.num;
+        less = 0;
+        greq = 0;
+        total = 0;
+
     }
 
     public void getCount() {

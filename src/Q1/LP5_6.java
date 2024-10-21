@@ -8,7 +8,12 @@ public class LP5_6 {
         System.out.print("Enter a positive integer: ");
         int posint = input.nextInt();
 
-
+        while (posint > 0) {
+            System.out.print( posint % 10);
+            posint = posint / 10;
+            posint += posint;
+        }
+        System.out.println(posint);
 
     }
 }
