@@ -6,14 +6,22 @@ public class LP5_6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a positive integer: ");
-        int posint = input.nextInt();
+        double posint = input.nextDouble();
+        int uno = (int)posint % 10;
+        int dos = (int) posint / 10 % 10;
+        int tres = (int) posint /100 % 10;
 
-        while (posint > 0) {
-            System.out.print( posint % 10);
-            posint = posint / 10;
-            posint += posint;
-        }
-        System.out.println(posint);
+
+
+        int sum = uno + dos + tres;
+        System.out.println(sum);
 
     }
-}
+
+
+        }
+
+/*
+Enter a positive integer: 555
+15
+ */
