@@ -5,18 +5,49 @@ public class LP3_9 {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your birthdate: ");
         System.out.println("Year: ");
-        int byear = input.nextInt();
+        int by = input.nextInt();
         System.out.println("Month: ");
-        int bmonth = input.nextInt();
+        int bm = input.nextInt();
         System.out.println("Day: ");
-        int bday = input.nextInt();
+        int bd = input.nextInt();
         System.out.println("Enter today's date: ");
         System.out.println("Year: ");
-        int year = input.nextInt();
+        int y = input.nextInt();
         System.out.println("Month: ");
-        int month = input.nextInt();
+        int m = input.nextInt();
         System.out.println("Day: ");
-        int day = input.nextInt();
+        int d = input.nextInt();
+
+        lp3_9class gahook = new lp3_9class(by, bm, bd, y, m, d);
+        gahook.calc();
+        int alivedays = gahook.getAlivedays();
+        int sleeptime = gahook.getSleeptime();
+
+        System.out.println("You have been alive for " + alivedays + " days.");
+        System.out.print("You have slept " + sleeptime + " hours");
+
     }
 
+
+
+
+
 }
+/*
+Enter your birthdate:
+Year:
+2007
+Month:
+11
+Day:
+19
+Enter today's date:
+Year:
+2024
+Month:
+12
+Day:
+13
+You have been alive for 6229 days.
+You have slept 49832 hours
+ */
