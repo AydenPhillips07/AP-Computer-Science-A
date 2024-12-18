@@ -11,13 +11,13 @@ public class lp3_10class {
     private double change;
 
 
-    public lp3_10class(int burg, int fri, int sod, double amount){
+    public lp3_10class(int burg, int fri, int sod, double amt){
         burgers = burg;
         fries = fri;
         sodas = sod;
         btax = 0.00;
         tax = 0.00;
-        amtgiv = amount;
+        amtgiv = amt;
         total = 0.00;
         change = 0.00;
 
@@ -27,9 +27,14 @@ public class lp3_10class {
         fries *= 1.09;
         sodas *= 0.99;
         btax = burgers + fries + sodas;
-        tax = btax * 0.65;
+        tax = btax * 0.065;
         total = btax + tax;
         change = amtgiv - total;
 
     }
-}
+    public double getBtax() {return btax;}
+    public double getTax() {return tax;}
+    public double getTotal() {return total;}
+    public double getChange() {return change;}
+    }
+
