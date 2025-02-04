@@ -20,8 +20,12 @@ public class Prog465h {
             System.out.println("Original Matrix:");
             for (int r = 0; r < mat.length; r++) {
                 for (int c = 0; c < mat[r].length; c++)
-                    System.out.print(mat[r][c ] + " ");
+                    System.out.print(mat[r][c] + " ");
                 System.out.println();
+            }
+
+            for (int[] n : mat) {
+
             }
 
         } catch (IOException e) {
