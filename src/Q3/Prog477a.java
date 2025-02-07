@@ -1,0 +1,22 @@
+package Q3;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Prog477a {
+    public static void main(String[] args) {
+        try {
+            Scanner file = new Scanner(new File("Langdat/FILENAME"));
+            int[][] mat = new int[5][4];
+
+            while (file.hasNext()) {
+                int gender = file.nextInt();
+                int grade = file.nextInt();
+                file.nextLine();
+            }
+        } catch (IOException e) {
+            System.out.println("Error: " + e);
+        }
+    }
+}
