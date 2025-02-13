@@ -9,6 +9,13 @@ public class Prog477a {
         try {
             Scanner file = new Scanner(new File("Langdat/prog477a.dat"));
             int[][] mat = new int[5][4];
+            int maltot = 0;
+            int femtot = 0;
+            int Atot = 0;
+            int Btot = 0;
+            int Ctot = 0;
+            int Dtot = 0;
+            int Ftot = 0;
 
             while (file.hasNext()) {
                 int gender = file.nextInt();
@@ -16,7 +23,8 @@ public class Prog477a {
                 file.nextLine();
             }
 
-
+            if (gender == 1)
+                
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
