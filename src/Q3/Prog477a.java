@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Prog477a {
     public static void main(String[] args) {
         try {
-            Scanner file = new Scanner(new File("Langdat/FILENAME"));
+            Scanner file = new Scanner(new File("Langdat/prog477a.dat"));
             int[][] mat = new int[5][4];
 
             while (file.hasNext()) {
@@ -15,6 +15,8 @@ public class Prog477a {
                 int grade = file.nextInt();
                 file.nextLine();
             }
+
+
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
