@@ -23,7 +23,7 @@ public class Prog477a {
                 file.nextLine();
             }
 
-            if (gender == 1)
+            //if (gender == 1)
                 
         } catch (IOException e) {
             System.out.println("Error: " + e);
