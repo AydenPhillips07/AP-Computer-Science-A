@@ -1,0 +1,20 @@
+package Q3.Prog703s;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class prog703s {
+    public static void main(String[] args) {
+        try {
+            Scanner file = new Scanner(new File("Langdat/prog703s.txt"));
+            ArrayList<Computers> computer = new ArrayList<>();
+            int num = file.nextInt();
+
+
+        } catch (IOException e) {
+            System.out.println("Error: " + e);
+        }
+    }
+}

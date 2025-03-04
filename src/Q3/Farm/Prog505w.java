@@ -93,8 +93,8 @@ public class Prog505w {
                 }
             }
             System.out.printf("Horse %s makes the least money\n" +
-                    "The total cumulative weight of all the animals is: %d\n" +
-                    "The total income of the day is: %.2f\n" +
+                    "The total cumulative weight of all the animals is: %d lbs\n" +
+                    "The total income of the day is: $%.2f\n" +
                     "Enough food to feed all animals: %b\n" +
                             "Most valuable cow: %s", animals.get(minHorseIndex).getName(), totweight, totalincome,
                     enoughfood, animals.get(minCowIndex));
