@@ -10,32 +10,42 @@ public class prog703s {
         try {
             Scanner file = new Scanner(new File("Langdat/prog703s.txt"));
             ArrayList<Computers> computer = new ArrayList<>();
-            int num = file.nextInt();
-            if (num == 1){
-                String name = file.next();
-                int numb = file.nextInt();
-                double value = file.nextDouble();
-                String col = file.next();
+                int num = file.nextInt();
+                if (num == 1) {
+                    String name = file.next();
+                    int numb = file.nextInt();
+                    double value = file.nextDouble();
+                    String col = file.next();
 
-            }
-            else if (num == 2){
-                String name = file.next();
-                int numb = file.nextInt();
-                double value = file.nextDouble();
-                double ver = file.nextDouble();
-            }
-            else if (num == 3){
-                String name = file.next();
-                int numb = file.nextInt();
-                double value = file.nextDouble();
-                int cod = file.nextInt();
-            }
+
+
+
+                } else if (num == 2) {
+                    String name = file.next();
+                    int numb = file.nextInt();
+                    double value = file.nextDouble();
+                    double ver = file.nextDouble();
+
+
+                } else if (num == 3) {
+                    String name = file.next();
+                    int numb = file.nextInt();
+                    double value = file.nextDouble();
+                    int cod = file.nextInt();
+
+                }
+
+
+
+
+
+
 
         } catch (IOException e) {
             System.out.println("Error: " + e);
         }
-        int GoG = 0;
-        int ver7 = 0;
-        int code5 = 0;
+
+
+
     }
 }

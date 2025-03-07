@@ -6,9 +6,9 @@ public abstract class Computers {
     private double value;
 
 
-    public Computers(String name, int num, double val){
+    public Computers(String name, int numb, double val){
         Name = name;
-        number = num;
+        number = numb;
         value = val;
     }
 
