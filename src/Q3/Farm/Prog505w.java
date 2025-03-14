@@ -68,14 +68,14 @@ public class Prog505w {
 
 
             int minCowIndex = 0;
-            double minCowValue = 0;
+            double maxCowValue = 0;
             for (int lcv = 0; lcv < animals.size(); lcv++){
                 if (animals.get(lcv) instanceof Cow){
                         Cow cow = (Cow) animals.get(lcv);
                     double cowValue = cow.value(cornCost, hayCost);
-                    if (cowValue > minCowValue) {
+                    if (cowValue > maxCowValue) {
                         minCowIndex = lcv;
-                        minCowValue = cowValue;
+                        maxCowValue = cowValue;
                     }
                 }
             }
