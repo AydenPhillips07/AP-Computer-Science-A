@@ -68,14 +68,14 @@ public class Prog505w {
 
 
             int minCowIndex = 0;
-            double maxCowValue = 0;
+            double maxCowValue = Double.MIN_VALUE;
             for (int lcv = 0; lcv < animals.size(); lcv++){
                 if (animals.get(lcv) instanceof Cow){
-                        Cow cow = (Cow) animals.get(lcv);
+                    Cow cow = (Cow) animals.get(lcv);
                     double cowValue = cow.value(cornCost, hayCost);
                     if (cowValue > maxCowValue) {
-                        minCowIndex = lcv;
-                        maxCowValue = cowValue;
+                            minCowIndex = lcv;
+                            maxCowValue = cowValue;
                     }
                 }
             }
@@ -96,7 +96,7 @@ public class Prog505w {
                     "The total cumulative weight of all the animals is: %d lbs\n" +
                     "The total income of the day is: $%.2f\n" +
                     "Enough food to feed all animals: %b\n" +
-                            "Most valuable cow: %s", animals.get(minHorseIndex).getName(), totweight, totalincome,
+                            "Most valuable cow is %s", animals.get(minHorseIndex).getName(), totweight, totalincome,
                     enoughfood, animals.get(minCowIndex));
 
         } catch (IOException e) {
