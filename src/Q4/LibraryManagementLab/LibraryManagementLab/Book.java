@@ -10,8 +10,8 @@ public class Book extends Media {
     @Override
     public String toString() {
         return "Book{" +
-                "title='" + getTitle() + '\'' +
-                ", isbn='" + getIsbn() + '\'' +
+               // "title='" + getTitle() + '\'' +
+                //", isbn='" + getIsbn() + '\'' +
                 ", author='" + author + '\'' +
                 '}';
     }
