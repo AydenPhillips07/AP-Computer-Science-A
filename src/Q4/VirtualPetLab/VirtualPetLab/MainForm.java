@@ -13,7 +13,9 @@ public class MainForm extends JFrame {
     private JLabel statusLabel;
     private JLabel imageLabel;
     private JComboBox<String> petSelectorComboBox;
-    // TODO: add adoption buttons
+    private JButton adoptADogButton;
+    private JButton adoptACatButton;
+    // TODO: add adoption buttons^
     // Pet list
     private PetManager petManager = new PetManager();
 
@@ -38,6 +40,7 @@ public class MainForm extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // TODO: Implement feeding the selected pet
+
             }
         });
 
