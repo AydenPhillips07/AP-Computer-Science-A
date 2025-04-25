@@ -75,6 +75,19 @@ public class MainForm extends JFrame {
         });
 
         // TODO: Implement adoption button actions
+        adoptADogButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+              String name = JOptionPane.showInputDialog("Enter new pet name: ");
+            }
+        });
+
+        adoptACatButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = JOptionPane.showInputDialog("Enter new pet name: ");
+            }
+        });
     }
 
     public void updateStatusLabel(String status) {
