@@ -8,6 +8,10 @@ public class Patron {
     private ArrayList<Book> checkedOutBooks;
 
     // TODO: Implement constructor (name, patronId)
+    public Patron(String name, String patronId){
+        name = name;
+        patronId = patronId;
+    }
 
     // Basic getters
     public String getName() { return name; }
