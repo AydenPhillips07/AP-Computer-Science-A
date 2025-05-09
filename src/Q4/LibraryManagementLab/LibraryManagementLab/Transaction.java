@@ -15,6 +15,17 @@ public class Transaction {
     }
 
     // TODO: Implement getters and setters
+    public String getIsbn(){return myIsbn;}
+    public String getPatronId(){return myPatronId;}
+    public String getMyCheckoutDate(){return myCheckoutDate;}
+    public String getMyReturnDate(){return myReturnDate;}
+
+    public void setIsbn(){}
+    public void setPatronId(){}
+    public void setCheckoutDate(){}
+    public void setReturnDate(){}
+
+
 
     @Override
     public String toString() {

@@ -3,19 +3,19 @@ package Q4.LibraryManagementLab.LibraryManagementLab;
 import java.util.ArrayList;
 
 public class Patron {
-    private String name;
-    private String patronId;
+    private String myName;
+    private String myPatronId;
     private ArrayList<Book> checkedOutBooks;
 
     // TODO: Implement constructor (name, patronId)
     public Patron(String name, String patronId){
-        name = name;
-        patronId = patronId;
+        myName = name;
+        myPatronId = patronId;
     }
 
     // Basic getters
-    public String getName() { return name; }
-    public String getPatronId() { return patronId; }
+    public String getName() { return myName; }
+    public String getPatronId() { return myPatronId; }
 
 
 
