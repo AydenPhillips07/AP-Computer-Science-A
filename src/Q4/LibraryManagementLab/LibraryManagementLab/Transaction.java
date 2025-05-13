@@ -20,10 +20,10 @@ public class Transaction {
     public String getMyCheckoutDate(){return myCheckoutDate;}
     public String getMyReturnDate(){return myReturnDate;}
 
-    public void setIsbn(){}
-    public void setPatronId(){}
-    public void setCheckoutDate(){}
-    public void setReturnDate(){}
+    public void setIsbn(String isbn){myIsbn = isbn;}
+    public void setPatronId(String patronId){myPatronId = patronId;}
+    public void setCheckoutDate(String checkoutDate){myCheckoutDate = checkoutDate;}
+    public void setReturnDate(String returnDate){myReturnDate = returnDate;}
 
 
 
