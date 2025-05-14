@@ -25,6 +25,7 @@ public abstract class Media {
     public String getIsbn(){
         return isbn;
     }
+    public boolean getCheckedOut(){return isCheckedOut;}
 
     public abstract int compareTo(Book other);
 }
