@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Library implements LibrarySystem {
     private ArrayList<Book> books;
@@ -11,10 +12,17 @@ public class Library implements LibrarySystem {
     private ArrayList<Transaction> transactions;
 
     // TODO: Implement the constructor
+    public Library(ArrayList<Book> yBooks, ArrayList<Patron> yPatrons, ArrayList<Transaction> yTransaction){
+        patrons = yPatrons;
+        transactions = yTransaction;
+        Collections.sort(yBooks);
+        books = yBooks;
+    }
 
     // Implement interface methods
     @Override
-    public void addBook(Book book) { /* Implementation; remember to add in sorted order */ }
+    public void addBook(Book book) {
+        /* Implementation; remember to add in sorted order */ }
     @Override
     public void removeBook(String isbn) { /* Implementation */ }
 

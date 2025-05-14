@@ -1,6 +1,6 @@
 package Q4.LibraryManagementLab.LibraryManagementLab;
 
-public class Book extends Media {
+public class Book extends Media implements Comparable{
     private String theAuthor;
 
     // TODO: Implement constructor (title, isbn, author); call super constructor
@@ -18,5 +18,15 @@ public class Book extends Media {
                 ", isbn='" + getIsbn() + '\'' +
                 ", author='" + theAuthor + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Book other) {
+        return this.getTitle().compareTo(other.getTitle());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
