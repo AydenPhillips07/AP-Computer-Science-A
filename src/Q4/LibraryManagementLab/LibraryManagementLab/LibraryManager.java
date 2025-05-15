@@ -19,8 +19,8 @@ public class LibraryManager {
                 String isbn = bookData[0];
                 String title = bookData[1];
                 String author = bookData[2];
-                //Book book = new Book(title, isbn, author);
-                //books.add(book);
+                Book book = new Book(title, isbn, author);
+                books.add(book);
             }
             file.close();
             System.out.println("success.");

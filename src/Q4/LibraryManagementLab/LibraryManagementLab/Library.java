@@ -71,13 +71,19 @@ public class Library implements LibrarySystem {
     public void viewMostRecentTransaction(String isbn) {
         // Hint: Use a backward loop to find the most recent transaction
         // If no transaction is found, print "No transactions found for ISBN: <isbn>"
+        if(){
+
+        }
+        else{
+            System.out.println("No transactions found for ISBN: " + isbn);
+        }
     }
 
     @Override
     public boolean checkoutBook(String isbn, String patronId) {
         int indexOfBook = findIndexOfISBN(isbn);
         int indexOfPatron = findIndexOfID(patronId);
-        if(books.get(indexOfBook).getCheckedOut() == false){
+        if(!books.get(indexOfBook).getCheckedOut()){
             books.get(indexOfBook).setCheckedOut(true);
             patrons.get(indexOfPatron).checkOutBook(books.get(indexOfBook));
             return true;
@@ -90,8 +96,10 @@ public class Library implements LibrarySystem {
         for(Transaction tran : transactions){
             if(tran.getIsbn().equals(isbn) && tran.getPatronId().equals(patronId)){
 
+
             }
         }
+        return false;
     }
 
     // TODO: Complete the implementation of LibrarySystem methods
