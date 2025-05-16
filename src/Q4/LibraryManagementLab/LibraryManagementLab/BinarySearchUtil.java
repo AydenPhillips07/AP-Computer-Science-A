@@ -12,21 +12,33 @@ public class BinarySearchUtil {
         myBooks = books;
         mySearch = target;
     }
-    public void goHook(){
-        int low = 0;
-        int high = myBooks.size();
-        while(low <= high){
-            int mid = (low/high) + 2;
-            if (myBooks.get(mid).getAuthor().equals(mySearch)|| myBooks.get(mid).getTitle().equals(mySearch)){
-                myBook = myBooks.get(mid);
-            }
-            else if(myBooks.get(mid).getAuthor().substring(0,1).equals(mySearch.substring(0, 1))){
-                low += mid;
-            }
-            else {
-                high = mid-1;
-            }
+    public Book goHookTitle(int low, int high) {
+        if (low > high) return null;
+        int mid = (low+high)/2;
+        if (myBooks.get(mid).getTitle().compareTo(mySearch) == 0){
+            return myBooks.get(mid);
+        }
+        if (myBooks.get(mid).getTitle().compareTo(mySearch) < 0){
+            return goHookTitle(low,mid-1);
+        }
+        else {
+            return goHookTitle(mid+1,high);
         }
     }
+
+
+    public Book goHookAuthor(int low, int high){
+        int mid = (low+high)/2;
+        if (myBooks.get(mid).getAuthor().equals(mySearch)){
+            return myBooks.get(mid);
+        }
+        else if (myBooks.get(mid).getAuthor().compareTo(mySearch) > 0){
+            return goHookAuthor(mid+1,high);
+        }
+        else {
+            return goHookAuthor(low,mid-1);
+        }
+    }
+
 
 }
